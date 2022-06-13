@@ -19,7 +19,7 @@ def roll(message, bet_color):
         bet_number = int(message.text)
         result = process(bet_number, bet_color)
 
-        bot.send_message(message.chat.id, f'Your betAAA is {bet_number}$ on {bet_color}')
+        bot.send_message(message.chat.id, f'Your bet is {bet_number}$ on {bet_color}')
         time.sleep(0.5)
         edit_msg = bot.send_message(message.chat.id, 'Rolling')
         time.sleep(0.2)
